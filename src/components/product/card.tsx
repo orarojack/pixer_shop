@@ -33,7 +33,7 @@ export default function Card({ product }: { product: Product }) {
   return (
     <motion.div variants={fadeInBottomWithScaleX()} title={name}>
       <div className="group relative flex aspect-[3/2] w-full justify-center overflow-hidden">
-        {is_external ? (
+        {Number(is_external) ? (
           <div className="absolute top-2 right-2 z-10 rounded-md bg-dark-300/70 px-2 py-2 text-white">
             <ExternalIcon className="h-5 w-5" />
           </div>

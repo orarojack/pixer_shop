@@ -116,7 +116,7 @@ export default function ProductPopupDetails() {
             ) : (
               ''
             )}
-            {!is_external && (
+            {!Number(is_external) && (
               <div className="flex space-x-6 border-t border-light-500 py-3 rtl:space-x-reverse dark:border-dark-500 md:py-4 3xl:py-5">
                 {!isFreeItem && (
                   <div className="flex items-center tracking-[.1px] text-dark dark:text-light">
@@ -144,9 +144,9 @@ export default function ProductPopupDetails() {
             </div>
           </div>
           <div className="flex flex-col-reverse items-center xs:flex-row xs:gap-2.5 xs:pb-4 md:flex-nowrap md:gap-3.5 lg:gap-4 3xl:pb-14">
-            {is_external ? (
+            {Number(is_external) ? (
               <Link
-                href={external_product_url}
+                href={external_product_url ?? '/'}
                 target="_blank"
                 className="transition-fill-colors pointer-events-auto relative mt-2.5 flex min-h-[46px] w-full flex-1 cursor-pointer items-center justify-center gap-2 rounded bg-brand py-3 px-4 font-semibold text-white opacity-100 duration-200 hover:bg-brand-dark focus:bg-brand-dark xs:mt-0 sm:h-12 md:px-5"
               >
