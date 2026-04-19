@@ -13,6 +13,7 @@ module.exports = {
   i18n,
   images: {
     domains: [
+      'pixer.clipkenya.org',
       'localhost',
       '127.0.0.1',
       '127.0.0.1:8000',
