@@ -46,8 +46,8 @@ export function formatVariantPrice({
 
 export default function usePrice(
   data?: {
-    amount: number;
-    baseAmount?: number;
+    amount: number | string;
+    baseAmount?: number | string;
     currencyCode?: string;
   } | null
 ) {
@@ -59,11 +59,13 @@ export default function usePrice(
     currencyCode = settings?.currency ?? 'USD',
   } = data ?? {};
   const value = useMemo(() => {
-    if (typeof amount !== 'number' || !currencyCode) return '';
+    const numericAmount = Number(amount);
+    const numericBaseAmount = Number(baseAmount);
+    if (isNaN(numericAmount) || !currencyCode) return '';
     const locale = currentLocale ?? 'en';
-    return baseAmount
-      ? formatVariantPrice({ amount, baseAmount, currencyCode, locale })
-      : formatPrice({ amount, currencyCode, locale });
+    return baseAmount !== undefined && !isNaN(numericBaseAmount)
+      ? formatVariantPrice({ amount: numericAmount, baseAmount: numericBaseAmount, currencyCode, locale })
+      : formatPrice({ amount: numericAmount, currencyCode, locale });
   }, [amount, baseAmount, currencyCode, currentLocale]);
   return typeof value === 'string'
     ? { price: value, basePrice: null, discount: null }
