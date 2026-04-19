@@ -1,13 +1,13 @@
 {
   "env": {
     "NEXT_PUBLIC_REST_API_ENDPOINT": "https://pixer.clipkenya.org",
-    "NEXT_PUBLIC_WEBSITE_URL": "https://placeholder-shop.vercel.app",
-    "NEXT_PUBLIC_ADMIN_URL": "https://placeholder-admin.vercel.app",
+    "NEXT_PUBLIC_WEBSITE_URL": "https://pixer-shop-eight.vercel.app",
+    "NEXT_PUBLIC_ADMIN_URL": "https://pixer-admin-omega.vercel.app",
     "NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY": "pk_placeholder",
     "NEXT_PUBLIC_PAYPAL_CLIENT_TOKEN": "",
     "NEXT_PUBLIC_PAYSTACK_KEY": "",
     "NEXT_PUBLIC_RAZORPAY_KEY": "",
-    "NEXT_PUBLIC_SHOP_URL": "https://placeholder-shop.vercel.app",
+    "NEXT_PUBLIC_SHOP_URL": "https://pixer-shop-eight.vercel.app",
     "NEXT_PUBLIC_GOOGLE_MAP_API_KEY": "",
     "NEXT_PUBLIC_AUTH_TOKEN_KEY": "AUTH_CRED",
     "APPLICATION_MODE": "production",
@@ -18,13 +18,13 @@
   "build": {
     "env": {
       "NEXT_PUBLIC_REST_API_ENDPOINT": "https://pixer.clipkenya.org",
-      "NEXT_PUBLIC_WEBSITE_URL": "https://placeholder-shop.vercel.app",
-      "NEXT_PUBLIC_ADMIN_URL": "https://placeholder-admin.vercel.app",
+      "NEXT_PUBLIC_WEBSITE_URL": "https://pixer-shop-eight.vercel.app",
+      "NEXT_PUBLIC_ADMIN_URL": "https://pixer-admin-omega.vercel.app",
       "NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY": "pk_placeholder",
       "NEXT_PUBLIC_PAYPAL_CLIENT_TOKEN": "",
       "NEXT_PUBLIC_PAYSTACK_KEY": "",
       "NEXT_PUBLIC_RAZORPAY_KEY": "",
-      "NEXT_PUBLIC_SHOP_URL": "https://placeholder-shop.vercel.app",
+      "NEXT_PUBLIC_SHOP_URL": "https://pixer-shop-eight.vercel.app",
       "NEXT_PUBLIC_GOOGLE_MAP_API_KEY": "",
       "NEXT_PUBLIC_AUTH_TOKEN_KEY": "AUTH_CRED",
       "APPLICATION_MODE": "production",
